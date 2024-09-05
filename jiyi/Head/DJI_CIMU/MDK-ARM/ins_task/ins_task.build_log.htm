@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A A, A, LIC=FYKYW-QEA4J-DYBV3-AVGEB-YWSZX-UK2U9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.12.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+E:\新建文件夹\Ship's wheel\Head\DJI_CIMU\MDK-ARM\ins_task.uvprojx
+Project File Date:  07/17/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'ins_task'
+compiling Task_Host.c...
+../Apps/Cloud_control.h(21): warning:  #1295-D: Deprecated declaration Pit_limt_hpz - give arg types
+  void Pit_limt_hpz();
+..\Task\Task_Host.c: 1 warning, 0 errors
+compiling Task_IMU_Send.c...
+../Apps/Cloud_control.h(21): warning:  #1295-D: Deprecated declaration Pit_limt_hpz - give arg types
+  void Pit_limt_hpz();
+..\Task\Task_IMU_Send.c: 1 warning, 0 errors
+compiling Status_Update.c...
+..\Apps\Cloud_control.h(21): warning:  #1295-D: Deprecated declaration Pit_limt_hpz - give arg types
+  void Pit_limt_hpz();
+..\Apps\Status_Update.c: 1 warning, 0 errors
+compiling Cloud_control.c...
+..\Apps\Cloud_control.h(21): warning:  #1295-D: Deprecated declaration Pit_limt_hpz - give arg types
+  void Pit_limt_hpz();
+..\Apps\Cloud_control.c: 1 warning, 0 errors
+compiling WS2812.c...
+../Apps/Cloud_control.h(21): warning:  #1295-D: Deprecated declaration Pit_limt_hpz - give arg types
+  void Pit_limt_hpz();
+..\Devices\WS2812.c: 1 warning, 0 errors
+compiling Chassis_control.c...
+..\Apps\Cloud_control.h(21): warning:  #1295-D: Deprecated declaration Pit_limt_hpz - give arg types
+  void Pit_limt_hpz();
+..\Apps\Chassis_control.c(235): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint8_t i;
+..\Apps\Chassis_control.c(236): warning:  #177-D: variable "Err"  was declared but never referenced
+  	int err[5],Err;
+..\Apps\Chassis_control.c(194): warning:  #177-D: function "Omnidirectional_Formula"  was declared but never referenced
+  static void Omnidirectional_Formula(float *Vx, float *Vy)
+..\Apps\Chassis_control.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=71772 RO-data=1196 RW-data=3040 ZI-data=40232  
+FromELF: creating hex file...
+"ins_task\ins_task.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+   * Component: DSP Variant: Library Version: 1.8.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.7.0.pack
+                Keil.STM32F4xx_DFP.2.7.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_ins_task
+  D:/Keil5/ARM/PACK/ARM/CMSIS/5.7.0/CMSIS/Core/Include
+  D:/Keil5/ARM/PACK/ARM/CMSIS/5.7.0/CMSIS/DSP/Include
+  D:/Keil5/ARM/PACK/Keil/STM32F4xx_DFP/2.7.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::CMSIS:DSP:Library:1.8.0
+      Library file:  CMSIS/DSP/Lib/ARM/arm_cortexM4lf_math.lib
+      Include file:  CMSIS/DSP/Include/arm_math.h
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
